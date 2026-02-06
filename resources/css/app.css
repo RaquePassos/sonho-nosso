@@ -1,0 +1,73 @@
+@import "tailwindcss";
+
+/* fontes base */
+@theme {
+  --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif;
+}
+
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 22px;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.btn-instagram i {
+  font-size: 20px;
+}
+
+.btn-instagram:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+
+.hero {
+  padding-bottom: 80px;
+}
+
+.sobre {
+  padding-top: 120px;
+}
+
+
+.section-divider {
+  height: 20px;
+
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+
+html {
+        scroll-behavior: smooth;
+        /* Como o menu é fixo, este ajuste evita que o menu tape o título da secção ao clicar */
+        scroll-padding-top: 100px;
+    }
+
+/* Botão padrão */
+.cta-pedir {
+  padding: 16px 32px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+/* Ajuste para mobile */
+@media (max-width: 768px) {
+  .cta-pedir {
+    padding: 14px 20px;
+    font-size: 14px;
+    width: 100%;
+    justify-content: center;
+  }
+}
+
