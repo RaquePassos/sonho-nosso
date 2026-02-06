@@ -1,10 +1,19 @@
 {
   "version": 2,
+  "public": true,
   "functions": {
-    "api/index.php": { "runtime": "vercel-php@0.7.5" }
+    "api/index.php": {
+      "runtime": "vercel-php@0.7.5"
+    }
   },
   "routes": [
-    { "src": "/(css|js|images|favicon.ico)/(.*)", "dest": "/public/$1/$2" },
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    {
+      "src": "/(css|js|images|favicon.ico)/(.*)",
+      "dest": "/public/$1/$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
   ]
 }
